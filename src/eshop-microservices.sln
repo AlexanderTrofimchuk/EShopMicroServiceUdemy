@@ -1,8 +1,39 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{B00D0BA5-A42B-4F63-88A7-50F912FA978A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Catalog", "Catalog", "{36A72EB1-2074-4EBB-B4E1-1B5166B43970}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catalog.API", "Services\Catalog\Catalog.API\Catalog.API.csproj", "{3BEF2CED-6D15-4608-A521-EABFC09D4400}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BuildingBlocks", "BuildingBlocks", "{97EDAD8B-88E9-4582-8D52-1FEEAAFE1000}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildingBlocks", "BuildingBlocks\BuildingBlocks\BuildingBlocks.csproj", "{E6F78573-8015-4DAF-BFDB-D81F97F5E932}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D47D87C5-FFFD-4502-AE63-AFC45C999DCA}"
+	ProjectSection(SolutionItems) = preProject
+		compose.yaml = compose.yaml
+		compose.override.yml = compose.override.yml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{36A72EB1-2074-4EBB-B4E1-1B5166B43970} = {B00D0BA5-A42B-4F63-88A7-50F912FA978A}
+		{3BEF2CED-6D15-4608-A521-EABFC09D4400} = {36A72EB1-2074-4EBB-B4E1-1B5166B43970}
+		{E6F78573-8015-4DAF-BFDB-D81F97F5E932} = {97EDAD8B-88E9-4582-8D52-1FEEAAFE1000}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3BEF2CED-6D15-4608-A521-EABFC09D4400}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BEF2CED-6D15-4608-A521-EABFC09D4400}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BEF2CED-6D15-4608-A521-EABFC09D4400}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BEF2CED-6D15-4608-A521-EABFC09D4400}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6F78573-8015-4DAF-BFDB-D81F97F5E932}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6F78573-8015-4DAF-BFDB-D81F97F5E932}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6F78573-8015-4DAF-BFDB-D81F97F5E932}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6F78573-8015-4DAF-BFDB-D81F97F5E932}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
